@@ -1,5 +1,5 @@
 name: Common Commit Actions
-on: [push, pull_request]
+on: workflow_call
 jobs:
   truffle_hog_scan:
     runs-on: ubuntu-latest

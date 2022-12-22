@@ -2,6 +2,7 @@ name: Common Commit Actions
 on: workflow_call
 jobs:
   truffle_hog_scan:
+    name: TruffleHog Credentials Scan
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,7 +17,7 @@ jobs:
           head: HEAD
           extra_args: --debug --only-verified
   flake8_linting:
-    name: Python flake8 Lint
+    name: Python flake8 Linting
     runs-on: ubuntu-latest
     steps:
       - name: Check out source repository

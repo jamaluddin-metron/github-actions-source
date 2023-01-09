@@ -22,7 +22,7 @@ jobs:
           path: ./
           base: ${{ github.event.repository.default_branch }}
           head: HEAD
-          extra_args: --debug --only-verified --since-commit ${{ env.GITHUB_SHA }}
+          extra_args: --debug --only-verified --since-commit ${{ GITHUB_SHA }}
   flake8_linting:
     name: Python flake8 Linting
     runs-on: ubuntu-latest
